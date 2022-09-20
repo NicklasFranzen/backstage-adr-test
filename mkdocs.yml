@@ -1,0 +1,15 @@
+site_name: 'example-docs'
+
+nav:
+- Home: index.md
+- Principles: Principles/index.md
+- Do-good-stuff: Principles/do-good-stuff.md
+
+plugins:
+- techdocs-core
+- kroki: # https://pypi.org/project/mkdocs-kroki-plugin/
+    FencePrefix: ''
+
+markdown_extensions:
+ - plantuml_markdown: # https://pypi.org/project/plantuml-markdown/
+     server: http://www.plantuml.com/plantuml
